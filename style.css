@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #111;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* SERVICES */
+.services .card {
+    background: #111;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+    background: #111;
+}
