@@ -1,66 +1,134 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: black;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
 }
 
 /* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
-    background: #111;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid gold;
 }
 
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    color: gold;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* NAV LINKS */
 nav ul {
     display: flex;
     list-style: none;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 nav a {
-    color: gold;
+    color: white;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gold;
 }
 
 /* HERO */
 .hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black, #111);
     text-align: center;
-    padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 48px;
+    color: gold;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 18px;
 }
 
 .hero button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: gold;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: white;
 }
 
 /* SECTIONS */
 section {
-    padding: 60px 20px;
+    padding: 80px 20px;
+}
+
+/* ABOUT */
+.about {
+    max-width: 800px;
+    margin: auto;
     text-align: center;
 }
 
 /* SERVICES */
+.services {
+    text-align: center;
+}
+
 .services .card {
     background: #111;
-    margin: 10px;
-    padding: 20px;
+    padding: 25px;
+    margin: 15px;
     display: inline-block;
-    width: 200px;
-    border-radius: 10px;
+    width: 250px;
+    border-radius: 12px;
+    border: 1px solid gold;
+    transition: 0.3s;
+}
+
+.services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px gold;
 }
 
 /* CONTACT */
 .contact {
+    text-align: center;
     background: #111;
+    padding: 50px;
+    border-top: 1px solid gold;
 }
